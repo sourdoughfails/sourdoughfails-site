@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SourdoughFails – Learn from the loaves that didn’t rise</title>
+  <meta name="description" content="Honest sourdough fails, diagnoses, and recoveries. Real mistakes, real fixes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Sourdough<span>Fails</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Every fail is a data point.</h1>
+        <p class="lead">
+          Real sourdough mistakes, honest diagnoses, and practical recoveries.
+          No perfect crumb shots — just the loaves that taught us something.
+        </p>
+        <a href="gallery.html" class="btn">See the fails</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured fails</h2>
+          <p>A few early examples. Real photos and stories coming soon.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-img">
+              <span>Photo placeholder<br>Dense brick loaf</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">Under-proofed</span>
+              <h3>The Brick</h3>
+              <p>Heavy, tight crumb, almost no oven spring. Classic under-proofing after a cold night.</p>
+              <a href="gallery.html">View details →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <span>Photo placeholder<br>Collapsed dome</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">Over-proofed</span>
+              <h3>The Deflator</h3>
+              <p>Beautiful rise on the counter, then a sad pancake in the oven. Timing is everything.</p>
+              <a href="gallery.html">View details →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <span>Photo placeholder<br>Gummy center</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">Undercooked</span>
+              <h3>The Gummy Middle</h3>
+              <p>Crust looked perfect, but the center was still wet. Needed more time and better heat.</p>
+              <a href="gallery.html">View details →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>SourdoughFails · Prototype · <a href="about.html">About this project</a></p>
+    </div>
+  </footer>
+</body>
+</html>
