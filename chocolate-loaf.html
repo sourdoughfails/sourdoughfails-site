@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Chocolate Loaf That Lied to Me – SourdoughFails</title>
+  <meta name="description" content="A chocolate sourdough that looked done on the outside but was still wet in the middle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Small additions just for the post page */
+    .post-header {
+      padding: 2.5rem 0 1.5rem;
+      text-align: center;
+    }
+    .post-header h1 {
+      margin-bottom: 0.5rem;
+    }
+    .post-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .post-content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding-bottom: 3rem;
+    }
+    .post-content p {
+      font-size: 1.05rem;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+    .post-content strong {
+      color: var(--dark-brown);
+    }
+    .post-images {
+      display: grid;
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+    .post-images img {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--wheat);
+    }
+    .working-theory {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem 1.5rem;
+      margin: 1.75rem 0;
+    }
+    .working-theory h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+    .next-time {
+      margin-top: 1.75rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Sourdough<span>Fails</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="post-header">
+        <h1>The Chocolate Loaf That Lied to Me</h1>
+        <p class="post-meta">Fail of the moment · Chocolate sourdough</p>
+      </div>
+
+      <article class="post-content">
+        <p>The recipe said follow these times and temperatures.<br>
+        I did exactly that.</p>
+
+        <p>When I pulled it out, the crust looked the part — deep chocolate brown, a few chips showing on the surface, the kind of color that makes you think “okay, this one might actually be good.” I set it on the rack feeling reasonably optimistic.</p>
+
+        <p>Then I cut it open.</p>
+
+        <p>The center was still wet. Not slightly underdone. Properly gummy and pasty in the middle, even though the outside had already committed to being done. You can see it in the photos — the outer crumb has some structure, but the middle never caught up.</p>
+
+        <!-- Replace the src paths with your actual image filenames once you upload them -->
+        <div class="post-images">
+          <img src="images/chocolate-loaf-outside.jpg" alt="Whole chocolate sourdough loaf on a cooling rack">
+          <img src="images/chocolate-loaf-inside.jpg" alt="Cross-section showing the underbaked, gummy center">
+        </div>
+
+        <p>This is the frustrating kind of fail. Nothing <em>looked</em> wrong while it was baking. The oven was at the right temperature. The timer went off when it was supposed to. And yet the loaf still managed to surprise me.</p>
+
+        <div class="working-theory">
+          <h3>Working theory</h3>
+          <p>Chocolate (especially with the extra fat and sugar from the chips) seems to slow down how heat moves through the dough. The outside sets and browns on schedule while the inside takes its time. What looks finished on the surface can still be underbaked in the center.</p>
+        </div>
+
+        <div class="next-time">
+          <h3>What I’ll try next time</h3>
+          <p>I’m going to start trusting internal temperature more than the clock (aiming for around 205–210°F in the middle), and I may drop the oven temperature a bit so the crust doesn’t race ahead of the crumb.</p>
+        </div>
+
+        <p>Not my finest work. But now I know.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>SourdoughFails · <a href="gallery.html">Back to Gallery</a></p>
+    </div>
+  </footer>
+</body>
+</html>
