@@ -82,6 +82,44 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Content column – keep as is or slightly tighter if you like */
+.post-content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+/* Image gallery container */
+.post-images {
+  display: grid;
+  gap: 1.25rem;
+  margin: 2rem 0;
+  /* Optional: two columns on wider screens */
+  /* grid-template-columns: 1fr; */
+}
+
+/* Optional – turn on two columns once the screen is wide enough */
+@media (min-width: 640px) {
+  .post-images {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* The images themselves – this is the important part */
+.post-images img {
+  width: 100%;
+  max-width: 100%;          /* never overflow the column */
+  height: auto;             /* keep aspect ratio */
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--wheat);
+
+  /* Optional polish */
+  object-fit: cover;        /* only needed if you force a fixed height */
+  /* max-height: 520px; */  /* uncomment if you want to cap very tall portraits */
+}
+
 /* Header / Nav */
 header {
   background: var(--warm-white);
